@@ -3,6 +3,8 @@
 Painel em React + TypeScript para a equipe da campanha fictícia **Conexão Ateliê** consultar inscrições
 e cadastrar participantes. Teste técnico para a vaga de Desenvolvedor Front-End do Ateliê de Propaganda.
 
+**Versão publicada:** https://test-ateliedapropaganda.vercel.app/ (acrescente `?cenario=lento`, `erro`, `vazio` ou `conflito` para ver cada estado).
+
 A especificação escrita antes do código está em [`docs/ESPECIFICACAO.md`](docs/ESPECIFICACAO.md).
 
 ## Como executar
