@@ -1,0 +1,74 @@
+@import '@fontsource-variable/inter';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-tinta-900: #111a17;
+  --color-tinta-700: #2a3531;
+  --color-tinta-500: #586661;
+  --color-tinta-300: #a9b1ad;
+  --color-tinta-100: #e8e9e7;
+
+  --color-superficie-pagina: #f4f5f2;
+  --color-superficie-card: #ffffff;
+  --color-superficie-sutil: #f8f9f7;
+
+  --color-marca-coral: #ff5c39;
+
+  --color-pendente-fundo: #fff1d6;
+  --color-pendente-texto: #8a5300;
+  --color-aprovado-fundo: #e2f2e8;
+  --color-aprovado-texto: #1d6b42;
+
+  --color-erro: #b42318;
+  --color-erro-fundo: #fdecea;
+  --color-sucesso: #1d6b42;
+  --color-sucesso-fundo: #e2f2e8;
+
+  --color-foco: #111a17;
+
+  --radius-campo: 6px;
+  --radius-card: 10px;
+
+  --text-titulo-pagina: 28px;
+  --text-titulo-pagina--line-height: 34px;
+  --text-titulo-secao: 16px;
+  --text-titulo-secao--line-height: 24px;
+  --text-indicador: 32px;
+  --text-indicador--line-height: 36px;
+  --text-corpo: 14px;
+  --text-corpo--line-height: 20px;
+  --text-rotulo: 13px;
+  --text-rotulo--line-height: 18px;
+  --text-legenda: 12px;
+  --text-legenda--line-height: 16px;
+  --text-coluna: 11px;
+  --text-coluna--line-height: 16px;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-superficie-pagina);
+    color: var(--color-tinta-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-foco);
+    outline-offset: 2px;
+  }
+
+  dialog::backdrop {
+    background-color: rgb(17 26 23 / 0.55);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
